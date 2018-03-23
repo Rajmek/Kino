@@ -1,15 +1,26 @@
 package SaleKinowe;
 
-public class Kino {
+import java.util.ArrayList;
+import java.util.List;
 
-	public int numerSali;
+
+public class Kino {
 	
-	public Kino(int numerSali) {
-		this.numerSali = numerSali;
+	public List<Sala> listaSal;
+	
+
+	
+	public Kino(List<Sala> listaSal) {
+		this.listaSal = new ArrayList<Sala>();
+			
+		
+					
 	}
 	
-	public int getNumerSali() {
-		int numer = 2;
-		return numer;
-	}
+	public void dodajSale(Sala sala ) {
+		this.listaSal.add(sala);
+		}
+
+
 }
+
